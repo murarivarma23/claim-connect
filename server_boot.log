@@ -1,0 +1,12 @@
+
+> claim-connect@0.1.0 server
+> tsx --env-file=.env.local server/index.ts
+
+[dotenv@17.3.1] injecting env (0) from .env.local -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+=================================
+🚀 ClaimConnect Backend Server
+📡 Socket.IO running on port 3001
+⚙️ BullMQ Workers (Ingestion & Claim) are monitoring...
+=================================
+
+spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
