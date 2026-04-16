@@ -12,10 +12,10 @@ export const gemini = new GoogleGenAI({
 
 /**
  * Helper to get the correct multimodal model.
- * gemini-2.5-flash is best for general multimodal and fast inference.
+ * gemini-2.0-flash is best for general multimodal and fast inference.
  */
 export const getVisionModel = () => {
-    return 'gemini-2.5-flash';
+    return 'gemini-2.0-flash';
 }
 
 /**
