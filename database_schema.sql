@@ -85,6 +85,7 @@ as $$
     1 - (items.embedding <=> query_embedding) as similarity
   from items
   where 1 - (items.embedding <=> query_embedding) > match_threshold
+  and items.status = 'active'
   order by items.embedding <=> query_embedding
   limit match_count;
 $$;

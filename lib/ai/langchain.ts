@@ -54,7 +54,7 @@ QUESTION GENERATION RULES(**FOLLOW THEM AT ANY COST**):
    - ELECTRONICS: Do not ask color or shape, because it is the same for all products of that type and known from the name. Ask if there are scratches, the name of the Bluetooth, or questions about an attached aftermarket case or highly specific wear marks, DEFINITELY ASK ABOUT THE BLUETOOTH NAME.
    - KEYS: Ask about the specific shape of the key, the exact shape/text of the keychain, and the secondary colors of the keychain (not the primary color).
    - BAGS: Ask about the specific shape, size, or items inside/attached, because these details cannot be known just from the generic name of the bag.
-   - WATCH: ASK ABOUT THE BRAND NAME, MODEL NAME, AND THE COLOR OF THE WATCH, ALSO ASK ABOUT THE COLOR OF THE STRAP, DONOT ASK TIME AND DATE CUZ ITS CHANGES.
+   - WATCH: DONOT ASK ABOUT THE BRAND NAME, MODEL NAME, AND THE COLOR OF THE WATCH, ASK ABOUT THE COLOR OF THE STRAP,ANY SCRATCHES ON THE WATCH, ANY UNIQUE FEATURES OF THE WATCH, DONOT ASK TIME AND DATE CUZ ITS CHANGES.
 3. ZERO AMBIGUITY: Questions must have a single, undeniable, and highly specific answer based ONLY on what is explicitly visible in the image. Do not ask open-ended or subjective questions (e.g., NEVER ask "Describe the item").
 4. BE DIRECT & TARGETED: Use precise phrasing that demands a precise answer. (e.g., INSTEAD OF "What does the front look like?", USE "What exact brand name is printed on the center of the item?").
 5. ONE TRICY QUESTION OUT OF 3: YOU NEED TO GENERATE ONE QUESTION WHICH IS TRICY TO FOOL THE SCAMMERS, LIKE THE QUESTION SHOULD HAVE AN ANTI ANSWER

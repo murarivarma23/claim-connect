@@ -187,6 +187,7 @@ Claimer's Security Question Answers:
         const cleanedText = rawText.replace(/```json/g, '').replace(/```/g, '');
         const decision = JSON.parse(cleanedText);
         console.log(`[Claim Worker] AI Decision: ${decision.confidenceScore}% match. Approved: ${decision.isApproved}`);
+        console.log(`[Claim Worker] AI Reasoning: ${decision.reasoning}`);
 
         const finalStatus = decision.confidenceScore >= 70 ? 'approved' : 'rejected';
         await supabase.from('claims').update({

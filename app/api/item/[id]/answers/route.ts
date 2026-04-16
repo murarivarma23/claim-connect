@@ -9,7 +9,7 @@ export async function POST(req: Request, context: { params: Promise<{ id: string
         // Save the finder's answers to the database
         const { error } = await supabase
             .from('items')
-            .update({ finder_answers: answers })
+            .update({ finder_answers: answers, status: 'active' })
             .eq('id', id);
 
         if (error) {

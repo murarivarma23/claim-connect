@@ -43,7 +43,7 @@ export default function FoundItemPage() {
                 const res = await fetch(`/api/item/${id}`);
                 if (res.ok) {
                     const data = await res.json();
-                    if (data.status === 'active') {
+                    if (data.status === 'pending_questions') {
                         // Gemini Finished!
                         setItemDetails(data);
                         setAnswers(Array(data.security_questions?.length || 0).fill(""));

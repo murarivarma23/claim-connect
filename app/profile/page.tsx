@@ -18,6 +18,7 @@ export default async function ProfilePage() {
         .from('items')
         .select('*')
         .eq('finder_id', (session.user as any).id)
+        .eq('status', 'active')
         .order('id', { ascending: false });
 
     const { data: myClaims } = await supabase

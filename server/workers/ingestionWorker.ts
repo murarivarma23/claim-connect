@@ -84,7 +84,7 @@ export const ingestionWorker = new Worker('item_ingestion', async (job: Job) => 
                 security_questions: aiData.security_questions,
                 ai_item_description: aiItemDescription,
                 embedding: embedding, // Saving the 768d vector into pgvector
-                status: 'active'
+                status: 'pending_questions'
             })
             .eq('id', itemId);
 
