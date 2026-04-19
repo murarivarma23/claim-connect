@@ -2,6 +2,7 @@ import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 
+
 // Extractor prompt to normalize user locations
 const LOCATION_EXTRACTION_PROMPT = `
 You are a precise geographic entity extractor for a university campus.
@@ -9,40 +10,50 @@ Your job is to read raw, unstructured text describing where an item was lost or 
 and map those locations EXACTLY to our defined topological graph nodes.
 
 THE VALID GRAPH NODES ARE:
-- Main Gate
+- Gate 2
+- Main Canteen
+- Hospital
+- CDMM Block
+- GDN Block
+- Anna Audi
+- Library
 - MGR Block (MB)
+- Main Gate
+- KC Lawn
 - SMV Block
 - Foodys
-- GDN Block
-- TT (Technology Tower)
+- Circle
 - Main Subway
+- LH-A-Block
+- LH-B-Block
+- LH-G-Block
+- LH-H-Block
+- Gate 3
+- TT (Technology Tower)
+- Stationary
+- TT Subway
+- TT Subway Mens Side
+- LH-C-Block
+- LH-D-Block
+- LH-E-Block
+- LH-F-Block
 - SJT (Silver Jubilee Tower)
+- SJT Ground
+- PRP Subway
 - PRP (Pearl Research Park)
-- Gandhi Block
-- CDMM Block
-- Ladies Hostel Gate
-- LH A Block
-- LH B Block
-- Mens Hostel Gate
-- MH A Block
-- MH B Block
-- MH C Block
-- MH D Block
-- Enzo Stores
-- MH E Block
-- MH F Block
-- MH G Block
+- MGB (Mahatma Gandhi Block)
+- MH-M-Block
+- MH-L-Block
+- MH-K-Block
+- MH-E-Block
+- MH-D-Block
+- MH-C-Block
+- MH-F-Block
+- MH-G-Block
 - Outdoor Stadium
-- MH H Block
-- MH J Block
-- MH K Block
-- MH L Block
-- MH M Block
-- MH N Block
-- MH P Block
-- MH Q Block
-- MH R Block
-- Mens Food Court (FC)
+- MH-A-Block
+- MH-H-Block
+- MH-J-Block
 
 RULES:
 1. You MUST pick the closest matching valid node STRICTLY from the list above. Do not invent names or append any free text.

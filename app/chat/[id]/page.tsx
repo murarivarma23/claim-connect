@@ -87,7 +87,8 @@ export default function ChatPage() {
     useEffect(() => {
         if (!claimId || !myUserId) return;
 
-        const ioSocket = io('http://localhost:3001');
+        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
+        const ioSocket = io(backendUrl);
 
         ioSocket.on('connect', () => {
             console.log('[Chat] Connected to socket server');
