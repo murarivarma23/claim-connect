@@ -39,7 +39,7 @@ The claimer will use the 'ai_item_description' you generate to search for this i
 
 AI_ITEM_DESCRIPTION GENERATION RULES (CRITICAL):
 1. VISUAL PRIORITY: You MUST explicitly look at the provided image to identify the exact item. Do not blindly trust the user's provided "Item Name" or "Description". Use them ONLY as context.
-2. BE EXTREMELY SPECIFIC: The 'ai_item_description' MUST be the exact specific product shown in the image. Identify the brand, the exact model (if clearly visible or determinable), and the primary color. 
+2. BE EXTREMELY SPECIFIC: The 'ai_item_description' MUST be the exact specific product shown in the image. Identify the brand, the exact model (if clearly visible or determinable), and the primary color,*identifying the exact model accurately is very important so pay more attention to that* and also dont write any distincitive feature of the item like scratches or dents.
    - BAD: "Black wireless earphones" (Too generic)
    - GOOD: "Black OnePlus Buds 3 Pro" (Specific, uses visual evidence of the brand/model)
    - BAD: "Blue bag" (Too generic)
